@@ -1,0 +1,25 @@
+:root {
+	/*Fonts*/
+
+	--main-font: "Roboto", sans-serif;
+	--secondary-font: "Raleway";
+
+	/*Text colors*/
+
+	--main-txt-cl: #212121;
+	--button-cl: #2196f3;
+	--grey-txt-cl: #757575;
+	--white-txt-cl: #ffffff;
+	/*Background color*/
+
+	--footer-bg-cl: #2f303a;
+	--main-bg-cl: #f5f5f5;
+	--white-bg-cl: #ffffff;
+	--light-bg-cl: #f5f4fa;
+	--overlay-bg-cl: rgba(33, 150, 243, 0.9);
+
+	/* Others */
+
+	--logo-company-color: #afb1b8;
+	--animation: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}

@@ -1,0 +1,62 @@
+.nav {
+	display: flex;
+	align-items: center;
+}
+
+.nav__list {
+	display: flex;
+	margin-left: 93px;
+}
+
+.nav__item {
+	margin-right: 50px;
+}
+
+.nav__item :last-child {
+	margin-right: 0;
+}
+
+.nav__list .link {
+	display: block;
+	padding-top: 32px;
+	padding-bottom: 32px;
+}
+
+.nav > .list .nav__link {
+	font-weight: 500;
+	font-size: 14px;
+	line-height: calc(16 / 14);
+	letter-spacing: 0.02em;
+
+	color: var(--main-txt-cl);
+
+	transition: color var(--animation);
+}
+
+.nav > .nav__list .nav__link.current {
+	font-weight: 500;
+	font-size: 14px;
+
+	position: relative;
+
+	line-height: calc(16 / 14);
+	letter-spacing: 0.02em;
+	color: var(--button-cl);
+}
+
+.nav__list .nav__link.current::after {
+	display: inline-block;
+	position: absolute;
+	content: "";
+	width: 100%;
+	height: 4px;
+	left: 0;
+	bottom: -1.5%;
+	background-color: var(--button-cl);
+	border-radius: 2px;
+}
+
+.nav > .nav__list .nav__link:hover,
+.nav > .nav__list .nav__link:focus {
+	color: var(--button-cl);
+}
