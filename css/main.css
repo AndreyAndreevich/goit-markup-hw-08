@@ -74,10 +74,8 @@ body {
 
 .container {
   width: 100%;
-  padding-left: 15px;
-  padding-right: 15px;
-  margin-left: auto;
-  margin-right: auto;
+  margin: 0 auto;
+  padding: 0 15px;
 }
 @media screen and (min-width: 480px) {
   .container {
@@ -364,16 +362,50 @@ body {
   display: -ms-flexbox;
   display: flex;
   gap: 30px;
-  padding: 0;
-  margin: 0;
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .team__list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .team__list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
 }
 
 .team__box {
-  width: 270px;
   -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
           box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
   background: var(--white-bg-cl);
+}
+@media screen and (max-width: 767px) {
+  .team__box:not(:last-child) {
+    margin-bottom: 30px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .team__box {
+    width: calc((100% - 60px) / 2);
+  }
+  .team__box:not(:nth-last-child(-n+2)) {
+    margin-bottom: 30px;
+  }
+  .team__box:not(:nth-child(2n)) {
+    margin-right: 30px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .team__box:not(:last-child) {
+    margin-right: 30px;
+  }
 }
 
 .team__card {
@@ -516,7 +548,6 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  width: 170px;
   height: 90px;
   color: var(--logo-company-color);
   border: 1px solid currentColor;
