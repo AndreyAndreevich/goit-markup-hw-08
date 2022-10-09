@@ -73,9 +73,7 @@
 	display: flex;
 }
 .footer__join {
-	// margin-left: 70px;
 	margin-top: 60px;
-	margin-bottom: 60px;
 
 	@media screen and (min-width: 768px) {
 		margin-left: 165px;
@@ -173,7 +171,6 @@
 	height: 50px;
 	width: 100%;
 	padding-left: 16px;
-	margin-right: 12px;
 
 	background: inherit;
 	border: 1px solid rgba(255, 255, 255, 0.3);

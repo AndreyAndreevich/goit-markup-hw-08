@@ -30,12 +30,12 @@
 	@media screen and (min-width: 768px) and (max-width: 1199px) {
 		width: calc((100% - 4 * 15px) / 2);
 
-		&:not(:nth-last-child(-n + 2)) {
-			margin-bottom: 30px;
-		}
-		&:not(:nth-child(2n)) {
-			margin-right: 30px;
-		}
+		// &:not(:nth-last-child(-n + 2)) {
+		// 	margin-bottom: 30px;
+		// }
+		// &:not(:nth-child(2n)) {
+		// 	margin-right: 30px;
+		// }
 	}
 
 	@media screen and (min-width: 1200px) {
