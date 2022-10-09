@@ -1071,6 +1071,11 @@ body {
         flex-wrap: wrap;
   }
 }
+@media screen and (min-width: 1200px) {
+  .subscribe__form {
+    gap: 12px;
+  }
+}
 
 .subscribe__input {
   height: 50px;
