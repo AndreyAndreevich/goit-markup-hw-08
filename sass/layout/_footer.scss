@@ -73,8 +73,6 @@
 	display: flex;
 }
 .footer__join {
-	margin-top: 60px;
-
 	@media screen and (min-width: 768px) {
 		margin-left: 165px;
 	}
@@ -148,7 +146,6 @@
 .subscribe__txt {
 	margin: 0;
 	margin-bottom: 20px;
-	margin-top: 20px;
 
 	color: var(--white-txt-cl);
 

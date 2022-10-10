@@ -74,8 +74,7 @@
 	display: flex;
 	margin-top: 40px;
 }
-
-.mobile-menu__link {
+.mobile-menu__item .mobile-menu__link {
 	font-weight: 500;
 	font-size: 40px;
 	line-height: calc(47 / 40);
@@ -90,6 +89,12 @@
 	}
 	&.current {
 		color: var(--button-cl);
+	}
+}
+
+.mobile-menu__item:not(:last-child) {
+	@media screen and (max-width: 767px) {
+		margin-bottom: 32px;
 	}
 }
 
@@ -133,11 +138,16 @@
 .mobile__social-link {
 	font-weight: 500;
 	font-size: 18px;
+
 	line-height: calc(22 / 18);
 
 	letter-spacing: 0.02em;
 
 	color: #2196f3;
+
+	@media screen and (min-width: 320px) and (max-width: 379px) {
+		font-size: 11px;
+	}
 }
 
 .mobile__social-item:not(:last-child)::after {
